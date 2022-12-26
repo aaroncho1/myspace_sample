@@ -1,0 +1,24 @@
+.main-content {
+    margin: 0 230px;
+    background: white;
+}
+
+.section-1-2 {
+    width: 50%;
+    float: left;
+}
+
+.section-2-2 {
+    width: 50%;
+    float: left;
+}
+
+.section-2-2>aside {
+    margin-left: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
