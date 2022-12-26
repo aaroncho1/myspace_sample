@@ -1,6 +1,7 @@
 .main-content {
-    margin: 0 230px;
+    margin: 0 auto;
     background: white;
+    width: 70%;
 }
 
 .section-1-2 {
