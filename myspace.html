@@ -1,0 +1,475 @@
+<html>
+<head>
+    <title>Myspace</title>
+    <meta charset="utf-8">
+    <style>
+        html, body, section, aside, header, h1,
+        img, nav, ul, li, a, figure, figcaption {
+
+            margin: 0;
+            border: 0;
+            padding: 0;
+
+            font: inherit;
+            text-align: inherit;
+            text-decoration: inherit;
+            color: inherit;
+
+            background: transparent;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            background: #E2E2E2; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        aside {
+            margin: 20px;
+        }
+
+        header {
+            background: #83ADD2;
+            color: white;
+            font-weight: bold;
+        }
+
+        .section-1-2-profile-pic > figcaption {
+            position: relative;
+            top: 20px;
+            text-align: center;
+        }
+
+        li {
+            float: left;
+        }
+
+        .main-content {
+            margin: 0 230px;
+            background: white;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        .header-logo {
+            display: block;
+            background: #152AA2;
+            height: 150px;
+            position: relative;
+        }
+
+        img {
+            display: block;
+            height: auto;
+            width: 100%;
+        }
+
+        .profile-pic {
+            display: block;
+            height: 250px;
+            width: 200px;
+        }
+
+        .header-logo > img {
+            width: 220px;
+            height: 120px;
+            float: left;
+            position: absolute;
+            top: 30px;
+        }
+
+        .header {
+            position: relative;
+        }
+
+        .header-browse {
+            position: absolute;
+            left: 350px;
+            bottom: 18px;
+        }
+
+        .header-browse > text {
+            font-weight: 100;
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-nav-list {
+            display: block;
+        }
+
+        .header-nav-list > li > a {
+            font-weight: normal;
+            font-size: small;
+            display: block;
+            margin: 5px;
+        }
+
+        .header-nav-list > li > a:after {
+            content: " |";
+            color: black;
+        }
+
+        .header-nav-list > li > a:after {
+        content: " |";
+        color: black;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .section-1-2 {
+            width: 50%;
+            float: left;
+        }
+
+        .section-1-2-overview-name {
+            display: block;
+            color: black;
+            font-weight: bold;
+        }
+
+        .section-1-2-profile-pic {
+            height: 300px;
+            width: 200px;
+            margin: 10px 10px 10px 0;
+            float: left;
+        }
+
+        .section-1-2-overview-intro {
+            display: block;
+        }
+
+        .online-now-symbol {
+            display: block;
+            height: 20px;
+            width: 20px;
+            float: left;
+            margin: 0 10px;
+            position: relative;
+            bottom: 3px;
+            left: 7px;
+        }
+
+        .online-now {
+            color: green;
+            display: block;
+            height: 20px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .a-pics-video {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .section-1-2-contact {
+            border: 2px solid #83ADD2;
+        }
+
+        .section-1-2-contact > ul > li {
+            box-sizing: border-box;
+            display: block;
+            width: 50%;
+            height: 25px;
+            padding: 5px;
+        }
+
+        .section-1-2-contact > ul > li > img:hover {
+            cursor: pointer;
+        }
+
+        .section-1-2-contact-img {
+            height: 24px;
+            width: 24px;
+            float: left;
+            margin-right: 3px;
+            position: relative;
+            bottom: 4px;
+        }
+
+        .section-1-2-url {
+            display: block;
+            border: 1px solid gray;
+        }
+
+        .section-1-2-url-text {
+            display: block;
+            font-weight: bold;
+        }
+
+        .section-1-2-interests {
+            border: 2px solid #83ADD2;
+        }
+
+        .section-1-2-interests-type {
+            display: block;
+            width: 25%;
+            float: left;
+            background: #B5DCFF;
+            margin-right: 10px;
+            color: #002fff;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .section-1-2-interests-answers {
+            display: block;
+            background: #DEF7FE;
+            margin-top: 5px;
+        }
+
+        .section-2-2 {
+            width: 49%;
+            float: left;
+        }
+
+        .section-2-2 > aside {
+            margin-left: 0;
+        }
+
+        .section-2-2-extended-network {
+            display: flex;
+            border: 2px solid black;
+            height: 120px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-2-2-extended-network > text {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .view-blog {
+            font-weight: bold;
+        }
+
+        .view-blog > a {
+            color: blue;
+        }
+
+        .section-2-2 > aside > header {
+            background: #FFBE5D;
+            color: #ff6600e6;
+        }
+
+        .section-2-2-blurbs > p > text {
+            color: #ff6600e6;
+            font-weight: bold;
+        }
+
+        .section-2-2-friends > p > a {
+            color: #ff6600e6;
+        }
+
+        .section-2-2-friends > ul > li > figure {
+            height: 100px;
+            width: 100px;
+            float: left;
+            margin: 20px;
+        }
+
+        .section-2-2-friends > ul > li > figure > figcaption {
+            position: relative;
+            top: -10px;
+            text-align: center;
+            color: gray;
+        }
+
+        .section-2-2-comments > p > a {
+            color: blue;
+        }
+
+        .section-2-2-comments > div > figure {
+            padding-top: 20px;
+            height: 160px;
+            width: 140px;
+            float: left;
+            background: #FFBE5D;
+        }
+
+        .section-2-2-comments > div > figure > figcaption {
+            position: relative;
+            top: -10px;
+            text-align: center;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .section-2-2-comments > div > figure > img {
+            margin: auto;
+            height: 100px;
+            width: 100px;
+        }
+
+        .section-2-2-comments-comment-box-comment {
+            display: block;
+            height: 180px;
+            background: #FFDEAE;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="main-content clearfix">
+        <header class="header">
+            <h1 class="header-logo clearfix">
+                <img src="assets/logo.png" alt="Myspace">
+            </h1>
+            <form class="header-browse" action="/browse" method="post">
+                <text>The Web</text><input type="radio" name="web" value="The Web" checked>
+                <text>MySpace</text><input type="radio" name="myspace" value="MySpace">
+                <input id="search" type="text" name="type" class="header">
+                <select id="selected-search" name="selected-type" class="header">   
+                    <option value="Search" disabled="true" selected="true">Search</option>
+                    <option value="Music">Music</option>
+                    <option value="People">People</option>
+                    <option value="Groups">Groups</option>
+                </select>
+            </form>
+            <nav class="header-nav">
+                <ul class="header-nav-list clearfix">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Browse">Browse</a></li>
+                    <li><a href="#Search">Search</a></li>
+                    <li><a href="#Invite">Invite</a></li>
+                    <li><a href="#Film">Film</a></li>
+                    <li><a href="#Mail">Mail</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Favorites">Favorites</a></li>
+                    <li><a href="#Forum">Forum</a></li>
+                    <li><a href="#Groups">Groups</a></li>
+                    <li><a href="#Events">Events</a></li>
+                    <li><a href="#Videos">Videos</a></li>
+                    <li><a href="#Music">Music</a></li>
+                    <li><a href="#Classifieds">Classifieds</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section-1-2">
+            <aside class="section-1-2-overview clearfix">
+                <h1 class="section-1-2-overview-name">Aaron</h1>
+                <figure class="section-1-2-profile-pic">
+                    <img class="profile-pic" src="assets/aaron2.jpg">
+                    <figcaption>View My: <a class="a-pics-video" href="#">Pics | Videos</a></figcaption>
+                </figure>
+                <text class="section-1-2-overview-intro">
+                    <p>"Miss the 2010s"</p>
+                    <p>Male<br>29 years old<br>New York,<br>New York
+                        <br>United States<br><br></p>
+                    <p class="online-now"><img class="online-now-symbol" src="assets/online_now.png">Online Now!</p>
+                    <p>Last Login:<br>12/24/2022</p>
+                </text>
+            </aside> 
+
+            <aside class="section-1-2-contact clearfix">
+                <header class="section-1-2-contact-header">Contacting Aaron</header>
+                <ul>
+                    <li><img class="section-1-2-contact-img" src="assets/send_message.png">Send Message</li>
+                    <li><img class="section-1-2-contact-img" src="assets/forward_to_friend.png">Forward to Friend</li>
+                    <li><img class="section-1-2-contact-img" src="assets/add_to_friends.png">Add to Friends</li>
+                    <li><img class="section-1-2-contact-img" src="assets/add_to_fav.png">Add to Favorites</li>
+                    <li><img class="section-1-2-contact-img" src="assets/IM.png">Instant Message</li>
+                    <li><img class="section-1-2-contact-img" src="assets/block_user.png">Block User</li>
+                    <li><img class="section-1-2-contact-img" src="assets/add_to_group.png">Add to Group</li>
+                    <li><img class="section-1-2-contact-img" src="assets/rank_user.png">Rank User</li>
+                </ul>
+            </aside>
+
+            <aside class="section-1-2-url">
+                <text class="section-1-2-url-text">MySpace URL</text>
+                <a href="#">www.myspace.com/aaroncho</a>
+            </aside>
+
+            <aside class="section-1-2-interests clearfix">
+                <header class="section-1-2-interests-header">Aaron's Interests</header>
+                <tr>
+                    <text class="section-1-2-interests-type">General</text>
+                    <text class="section-1-2-interests-answers">Coding, basketball, hiking, sports</text>
+                </tr>
+                <tr>
+                    <text class="section-1-2-interests-type">Music</text>
+                    <text class="section-1-2-interests-answers">EDM, pop, hip-pop</text>
+                </tr>
+                <tr>
+                    <text class="section-1-2-interests-type">Movies</text>
+                    <text class="section-1-2-interests-answers">Too many to name..</text>
+                </tr>
+                <tr>
+                    <text class="section-1-2-interests-type">Television</text>
+                    <text class="section-1-2-interests-answers">Sitcoms and Dystopia</text>
+                </tr>
+            </aside>
+        </section>
+
+        <section class="section-2-2">
+            <aside class="section-2-2-extended-network">
+                <text>Aaron is in your extended network.</text>
+            </aside>
+
+            <aside class="section-2-2-blog">
+                <text class="view-blog">Aaron's Latest Blog Entries [<a href="#">View Blog</a>]</text>
+                <p>There are no Blog Entries yet.</p>
+            </aside>
+
+            <aside class="section-2-2-blurbs">
+                <header class="section-2-2-blurbs-header">
+                    Aaron's Blurbs
+                </header>
+                <p><text>About me:</text>
+                    <br>I'm Aaron, I miss the good old days of choosing your top 8 and coding my own HTML backgrounds :)
+                </p>
+                <p><text>Who I'd like to meet:</text>
+                <br>You! :D
+                </p>
+            </aside>
+
+            <aside class="section-2-2-friends clearfix">
+                <header class="section-2-2-friends-header">
+                    Aaron's Friend Space
+                </header>
+                <p>Aaron has <a href="#">1</a> friends.</p>
+                <ul>
+                    <li>
+                        <figure>
+                            <figcaption>Tom</figcaption>
+                            <img src="assets/tom.jpeg">
+                        </figure>
+                    </li>
+                </ul>
+            </aside>
+
+            <aside class="section-2-2-comments clearfix">
+                <header class="section-2-2-comments-header">
+                    Aaron's Friends Comments
+                </header>
+                <p>Displaying 1 of 1 comments {<a href="#">View all</a> | <a href="#">Add Comment</a>}</p>
+                <div class="section-2-2-comments-comment-box">
+                    <figure>
+                        <figcaption>Tom</figcaption>
+                        <img src="assets/tom.jpeg">
+                    </figure>
+                    <div class="section-2-2-comments-comment-box-comment">
+                        <text>1 hour ago</text>
+                        <p>Welcome back!</p>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </section>
+</body>
+</html>
