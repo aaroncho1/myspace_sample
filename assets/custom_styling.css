@@ -1,20 +1,8 @@
-.section-1-2-profile-pic>figcaption {
-    position: relative;
-    top: 20px;
-    text-align: center;
-}
-
 .header-logo {
     display: block;
     background: #152AA2;
     height: 150px;
     position: relative;
-}
-
-.profile-pic {
-    display: block;
-    height: 250px;
-    width: 200px;
 }
 
 .header-logo>img {
@@ -68,9 +56,21 @@
 
 .section-1-2-profile-pic {
     height: 300px;
-    width: 200px;
+    width: 45%;
     margin: 10px 10px 10px 0;
     float: left;
+}
+
+.profile-pic {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.section-1-2-profile-pic>figcaption {
+    position: relative;
+    top: 20px;
+    text-align: center;
 }
 
 .section-1-2-overview-intro {
