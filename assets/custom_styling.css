@@ -241,3 +241,56 @@
 .section-2-2-comments-comment-box-comment>text {
     font-weight: bold;
 }
+
+.hamburger-dropdown {
+    display: none;
+}
+
+@media all and (max-width: 1105px) {
+    .header-nav {
+            display: block;
+        }
+
+    .header-nav-list {
+        display: none;
+    }
+
+    .header-browse {
+        display: none;
+    }
+
+    .hamburger-dropdown {
+        display: block;
+    }
+
+    .hamburger-dropdown>li {
+        background: url(./hamburger.png);
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        left: -25px;
+        cursor: pointer;
+        float: right;
+    }
+
+    .hamburger-dropdown ul {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        flex-direction: column;
+        cursor: pointer;
+        display: none;
+    }
+
+    .hamburger-dropdown li:hover ul {
+        display: flex;
+        background: #83ADD2;
+    }
+
+    .hamburger-dropdown ul li:hover  {
+        color: black;
+        background: white;
+    }
+};
